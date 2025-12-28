@@ -25,6 +25,11 @@
         <li><a href="#education">EDUCATION</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#hobbies">HOBBIES</a></li>
+        <li>
+          <button class="pill" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            DARK MODE
+          </button>
+        </li>
         <li><a class="pill dark" href="#contact">GET IN TOUCH</a></li>
       </ul>
     </nav>
@@ -32,7 +37,7 @@
 
   <main class="wrap">
     <!-- HERO -->
-    <section class="cover" aria-label="Intro">
+    <section class="cover reveal" aria-label="Intro">
       <div class="cover-left panel">
         <div class="kicker">
           <span class="tag">RESUME</span>
@@ -52,7 +57,7 @@
 
         <div class="cta-row">
           <a class="pill dark" href="#projects">VIEW PROJECTS</a>
-          <a class="pill" href="https://github.com/jenilkathrotia/portfolio/blob/72f2e8fbf7e3c444f89fcae586196335032db67b/assets/%20Jenil_Kathrotia_Resume.pdf" target="_blank" rel="noreferrer">RESUME PDF</a>
+          <a class="pill" href="./assets/Jenil_Kathrotia_Resume.pdf" target="_blank" rel="noreferrer">RESUME PDF</a>
         </div>
 
         <div class="meta-row">
@@ -89,7 +94,7 @@
     </section>
 
     <!-- CONTENT LIST -->
-    <section class="contents panel" aria-label="Contents">
+    <section class="contents panel reveal" aria-label="Contents">
       <div class="contents-head">
         <h2 class="section-title">CONTENTS LIST</h2>
         <div class="mini">2025 EDITION</div>
@@ -107,10 +112,18 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="block" id="projects">
+    <section class="block reveal" id="projects">
       <div class="block-head">
         <h2 class="section-title">PROJECTS</h2>
         <p class="sub">ML + data engineering projects with deployment-focused thinking.</p>
+      </div>
+
+      <!-- Project search (advanced feature) -->
+      <div class="panel tools-row">
+        <div class="tool-left">
+          <div class="label">SEARCH PROJECTS</div>
+          <input id="projectSearch" type="text" placeholder="Type to filter (e.g., FastAPI, PySpark, GCP)..." />
+        </div>
       </div>
 
       <div class="cards">
@@ -161,7 +174,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="split block" id="about">
+    <section class="split block reveal" id="about">
       <div class="panel about-left">
         <h2 class="section-title">ABOUT ME</h2>
         <p class="card-text">
@@ -188,7 +201,7 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="block" id="experience">
+    <section class="block reveal" id="experience">
       <div class="block-head">
         <h2 class="section-title">EXPERIENCE</h2>
         <p class="sub">Roles that built research, communication, and execution skills.</p>
@@ -235,7 +248,7 @@
     </section>
 
     <!-- EDUCATION -->
-    <section class="block" id="education">
+    <section class="block reveal" id="education">
       <div class="block-head">
         <h2 class="section-title">EDUCATION</h2>
         <p class="sub">Academic background.</p>
@@ -268,7 +281,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="block" id="skills">
+    <section class="block reveal" id="skills">
       <div class="block-head">
         <h2 class="section-title">TECHNICAL SKILLS</h2>
         <p class="sub">Tools and technologies I use.</p>
@@ -295,70 +308,57 @@
     </section>
 
     <!-- HOBBIES -->
-<section class="block" id="hobbies">
-    <div class="block-head">
-      <h2 class="section-title">HOBBIES</h2>
-      <p class="sub">Activities that keep me active, focused, and balanced.</p>
-    </div>
-  
-    <div class="hobbies-grid">
-      <!-- SOCCER -->
-      <div class="panel hobby-card image">
-        <div class="hobby-image">
-          <img src="assets/hobby-soccer.jpg" alt="Playing soccer" />
+    <section class="block reveal" id="hobbies">
+      <div class="block-head">
+        <h2 class="section-title">HOBBIES</h2>
+        <p class="sub">Activities that keep me active, focused, and balanced.</p>
+      </div>
+
+      <div class="hobbies-grid">
+        <div class="panel hobby-card image">
+          <div class="hobby-image">
+            <img src="assets/hobby-soccer.jpg" alt="Playing soccer" />
+          </div>
+          <div class="hobby-content">
+            <div class="hobby-title">SOCCER</div>
+            <p class="card-text">Team sport that builds discipline, communication, and endurance.</p>
+          </div>
         </div>
-        <div class="hobby-content">
-          <div class="hobby-title">SOCCER</div>
-          <p class="card-text">
-            Team sport that builds discipline, communication, and endurance.
-          </p>
+
+        <div class="panel hobby-card image">
+          <div class="hobby-image">
+            <img src="assets/hobby-hiking.jpg" alt="Hiking" />
+          </div>
+          <div class="hobby-content">
+            <div class="hobby-title">HIKING</div>
+            <p class="card-text">Exploring trails and nature to reset focus and maintain mental clarity.</p>
+          </div>
+        </div>
+
+        <div class="panel hobby-card image">
+          <div class="hobby-image">
+            <img src="assets/hobby-chess.jpg" alt="Chess" />
+          </div>
+          <div class="hobby-content">
+            <div class="hobby-title">CHESS</div>
+            <p class="card-text">Strategy-driven thinking, pattern recognition, and long-term planning.</p>
+          </div>
+        </div>
+
+        <div class="panel hobby-card image">
+          <div class="hobby-image">
+            <img src="assets/hobby-gym.jpg" alt="Gym training" />
+          </div>
+          <div class="hobby-content">
+            <div class="hobby-title">GYM</div>
+            <p class="card-text">Strength training and consistency to stay sharp physically and mentally.</p>
+          </div>
         </div>
       </div>
-  
-      <!-- HIKING -->
-      <div class="panel hobby-card image">
-        <div class="hobby-image">
-          <img src="assets/hobby-hiking.jpg" alt="Hiking" />
-        </div>
-        <div class="hobby-content">
-          <div class="hobby-title">HIKING</div>
-          <p class="card-text">
-            Exploring trails and nature to reset focus and maintain mental clarity.
-          </p>
-        </div>
-      </div>
-  
-      <!-- CHESS -->
-      <div class="panel hobby-card image">
-        <div class="hobby-image">
-          <img src="assets/hobby-chess.jpg" alt="Chess" />
-        </div>
-        <div class="hobby-content">
-          <div class="hobby-title">CHESS</div>
-          <p class="card-text">
-            Strategy-driven thinking, pattern recognition, and long-term planning.
-          </p>
-        </div>
-      </div>
-  
-      <!-- GYM -->
-      <div class="panel hobby-card image">
-        <div class="hobby-image">
-          <img src="assets/hobby-gym.jpg" alt="Gym training" />
-        </div>
-        <div class="hobby-content">
-          <div class="hobby-title">GYM</div>
-          <p class="card-text">
-            Strength training and consistency to stay sharp physically and mentally.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+    </section>
 
     <!-- CONTACT -->
-    <section class="block" id="contact">
+    <section class="block reveal" id="contact">
       <div class="contact panel">
         <div class="contact-left">
           <h2 class="section-title">GET IN TOUCH</h2>
@@ -410,6 +410,9 @@
       <a class="meta" href="#top">BACK TO TOP ↑</a>
     </footer>
   </main>
+
+  <!-- Back to top button -->
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
