@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenil Kathrotia — Portfolio</title>
+  <meta name="description" content="Jenil Kathrotia — Data Science portfolio: projects, experience, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar" id="top">
+    <nav class="nav wrap">
+      <a class="brand" href="#top">JENIL<span class="dot">®</span></a>
+
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#hobbies">HOBBIES</a></li>
+        <li><a class="pill dark" href="#contact">GET IN TOUCH</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="cover" aria-label="Intro">
+      <div class="cover-left panel">
+        <div class="kicker">
+          <span class="tag">RESUME</span>
+          <span class="tag alt">PORTFOLIO</span>
+          <span class="tag thin">SAN JOSE, CA</span>
+        </div>
+
+        <h1 class="display">
+          JENIL<br/>
+          KATHROTIA
+        </h1>
+
+        <p class="lede">
+          Data Science student at San Jose State University focused on <strong>ML systems</strong>, <strong>data pipelines</strong>,
+          and <strong>production-ready APIs</strong>. I enjoy turning messy data into reliable, scalable solutions.
+        </p>
+
+        <div class="cta-row">
+          <a class="pill dark" href="#projects">VIEW PROJECTS</a>
+          <a class="pill" href="assets/Jenil_Kathrotia_Resume.pdf" target="_blank" rel="noreferrer">RESUME PDF</a>
+        </div>
+
+        <div class="meta-row">
+          <a class="meta" href="https://github.com/jenilkathrotia" target="_blank" rel="noreferrer">GITHUB</a>
+          <a class="meta" href="https://www.linkedin.com/in/jenil-kathrotiya-655935257" target="_blank" rel="noreferrer">LINKEDIN</a>
+          <a class="meta" href="#contact">EMAIL</a>
+        </div>
+      </div>
+
+      <div class="cover-right panel">
+        <div class="photo-frame">
+          <img class="photo" src="assets/portrait.jpg" alt="Portrait of Jenil Kathrotia" />
+        </div>
+
+        <div class="info-grid">
+          <div class="info">
+            <div class="label">ROLE</div>
+            <div class="value">DATA SCIENCE • ML • DATA ENGINEERING</div>
+          </div>
+          <div class="info">
+            <div class="label">EMAIL</div>
+            <div class="value" id="emailInline">jenil.kathrotia@sjsu.edu</div>
+          </div>
+          <div class="info">
+            <div class="label">PHONE</div>
+            <div class="value">+1 (201) 725-7992</div>
+          </div>
+          <div class="info">
+            <div class="label">STATUS</div>
+            <div class="value">OPEN TO OPPORTUNITIES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT LIST -->
+    <section class="contents panel" aria-label="Contents">
+      <div class="contents-head">
+        <h2 class="section-title">CONTENTS LIST</h2>
+        <div class="mini">2025 EDITION</div>
+      </div>
+
+      <div class="contents-grid">
+        <a class="contents-item" href="#projects"><span>01.</span> PROJECTS <span class="dots"></span> <span>01</span></a>
+        <a class="contents-item" href="#about"><span>02.</span> ABOUT <span class="dots"></span> <span>02</span></a>
+        <a class="contents-item" href="#experience"><span>03.</span> EXPERIENCE <span class="dots"></span> <span>03</span></a>
+        <a class="contents-item" href="#education"><span>04.</span> EDUCATION <span class="dots"></span> <span>04</span></a>
+        <a class="contents-item" href="#skills"><span>05.</span> TECHNICAL SKILLS <span class="dots"></span> <span>05</span></a>
+        <a class="contents-item" href="#hobbies"><span>06.</span> HOBBIES <span class="dots"></span> <span>06</span></a>
+        <a class="contents-item" href="#contact"><span>07.</span> GET IN TOUCH <span class="dots"></span> <span>07</span></a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="block" id="projects">
+      <div class="block-head">
+        <h2 class="section-title">PROJECTS</h2>
+        <p class="sub">ML + data engineering projects with deployment-focused thinking.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card panel">
+          <div class="card-top">
+            <h3 class="card-title">CUSTOMER CHURN PREDICTION API</h3>
+            <div class="chip-row">
+              <span class="chip">PYTHON</span><span class="chip">SCIKIT-LEARN</span><span class="chip">FASTAPI</span><span class="chip">DOCKER</span><span class="chip">CI/CD</span>
+            </div>
+          </div>
+          <p class="card-text">
+            Built an ML churn model and exposed real-time predictions via a FastAPI REST service.
+            Packaged with Docker and structured for CI/CD-style deployment.
+          </p>
+          <div class="card-actions">
+            <a class="pill" href="https://github.com/jenilkathrotia" target="_blank" rel="noreferrer">CODE</a>
+          </div>
+        </article>
+
+        <article class="card panel">
+          <div class="card-top">
+            <h3 class="card-title">HOUSETS — HOUSING DATA PIPELINE</h3>
+            <div class="chip-row">
+              <span class="chip">PYTHON</span><span class="chip">PYSPARK</span><span class="chip">GCP</span><span class="chip">ETL</span>
+            </div>
+          </div>
+          <p class="card-text">
+            Designed an end-to-end pipeline to clean and process <strong>890K+</strong> U.S. housing records,
+            scaling transformation with PySpark + Google Cloud Storage and analyzing trends across <strong>6,000+</strong> ZIP codes.
+          </p>
+          <div class="card-actions">
+            <a class="pill" href="https://github.com/jenilkathrotia" target="_blank" rel="noreferrer">CODE</a>
+          </div>
+        </article>
+
+        <article class="card panel">
+          <div class="card-top">
+            <h3 class="card-title">VOLUNTEER HOURS TRACKING</h3>
+            <div class="chip-row">
+              <span class="chip">EXCEL</span><span class="chip">AUTOMATION</span><span class="chip">DATA OPS</span>
+            </div>
+          </div>
+          <p class="card-text">
+            Managed a volunteer database of <strong>200+</strong> individuals and automated attendance + hours tracking to streamline reporting.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="split block" id="about">
+      <div class="panel about-left">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="card-text">
+          I’m a Data Science undergraduate at <strong>San Jose State University</strong> (anticipated GPA: <strong>4.0</strong>).
+          I’ve worked as a <strong>Design-Lab Intern</strong> at the University of Arizona, applying structured problem-solving
+          (Empathize, Define, Ideate, Prototype) and collaborating on tools for socially conscious organizations.
+        </p>
+        <p class="card-text">
+          I’m aiming for roles where I can build <strong>high-quality data pipelines</strong>, develop <strong>ML services</strong>,
+          and improve product decisions with <strong>analytics</strong>.
+        </p>
+      </div>
+
+      <div class="panel about-right">
+        <div class="photo-frame small">
+          <img class="photo" src="assets/editorial-1.jpg" alt="Editorial photo" />
+        </div>
+
+        <div class="quote">
+          <div class="label">FOCUS</div>
+          <div class="value">PIPELINES • ML APIS • CLOUD</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="block" id="experience">
+      <div class="block-head">
+        <h2 class="section-title">EXPERIENCE</h2>
+        <p class="sub">Roles that built research, communication, and execution skills.</p>
+      </div>
+
+      <div class="timeline panel">
+        <div class="trow">
+          <div class="tleft">JAN 2024 — MAY 2024</div>
+          <div class="tright">
+            <h3 class="card-title">DESIGN-LAB INTERN — UNIVERSITY OF ARIZONA</h3>
+            <ul class="bullets">
+              <li>Collaborated in a design environment and gained hands-on experience in research + delivery.</li>
+              <li>Applied Empathize, Define, Ideate, Prototype to move concepts into usable solutions.</li>
+              <li>Developed an online toolkit for technical assistance and training for nonprofits.</li>
+              <li>Strengthened presentation, data interpretation, and root cause analysis skills.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="trow">
+          <div class="tleft">JUL 2020 — MAY 2022</div>
+          <div class="tright">
+            <h3 class="card-title">LAB ASSISTANT — RMG MAHESHWARI ENGLISH SCHOOL</h3>
+            <ul class="bullets">
+              <li>Assisted with experiments and instrument setup.</li>
+              <li>Documented tests, measurements, and results.</li>
+              <li>Supported students with collaboration and presentations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="trow">
+          <div class="tleft">JUL 2020 — JUL 2022</div>
+          <div class="tright">
+            <h3 class="card-title">VOLUNTEER COORDINATOR — ROTARY CLUB SURAT</h3>
+            <ul class="bullets">
+              <li>Managed a volunteer database of 200+ individuals.</li>
+              <li>Tracked attendance and contribution hours using Excel automation.</li>
+              <li>Coordinated logistics and data collection for events.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="block" id="education">
+      <div class="block-head">
+        <h2 class="section-title">EDUCATION</h2>
+        <p class="sub">Academic background.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card panel">
+          <h3 class="card-title">SAN JOSE STATE UNIVERSITY</h3>
+          <div class="mini">AUG 2024 — MAY 2027</div>
+          <p class="card-text">Bachelor’s — Data Science</p>
+          <p class="card-text"><strong>Anticipated GPA:</strong> 4.0</p>
+        </article>
+
+        <article class="card panel">
+          <h3 class="card-title">RMG MAHESHWARI ENGLISH SCHOOL</h3>
+          <div class="mini">JUL 2020 — JUL 2022</div>
+          <p class="card-text">High School Graduate</p>
+          <p class="card-text"><strong>GPA:</strong> 3.7</p>
+        </article>
+
+        <article class="card panel">
+          <h3 class="card-title">LINKS</h3>
+          <div class="mini">PROFILES</div>
+          <p class="card-text">
+            <a class="meta" href="https://github.com/jenilkathrotia" target="_blank" rel="noreferrer">github.com/jenilkathrotia</a><br/>
+            <a class="meta" href="https://www.linkedin.com/in/jenil-kathrotiya-655935257" target="_blank" rel="noreferrer">linkedin.com/in/jenil-kathrotiya</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="block" id="skills">
+      <div class="block-head">
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+        <p class="sub">Tools and technologies I use.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="panel skillbox">
+          <h3 class="card-title">PROGRAMMING</h3>
+          <p class="card-text">Python, Java, C, SQL, MySQL, MATLAB, HTML/CSS</p>
+        </div>
+        <div class="panel skillbox">
+          <h3 class="card-title">WEB / BACKEND</h3>
+          <p class="card-text">FastAPI, Flask, Node.js, Express.js, Spring Boot</p>
+        </div>
+        <div class="panel skillbox">
+          <h3 class="card-title">DATA / CLOUD / TOOLS</h3>
+          <p class="card-text">Google Cloud, Microsoft Azure, Git/GitHub, Excel/Sheets, Statistics, Root Cause Analysis</p>
+        </div>
+        <div class="panel skillbox">
+          <h3 class="card-title">OTHER</h3>
+          <p class="card-text">Adobe Suite, After Effects, Slack, Zendesk, Project Management, Leadership</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+<section class="block" id="hobbies">
+    <div class="block-head">
+      <h2 class="section-title">HOBBIES</h2>
+      <p class="sub">Activities that keep me active, focused, and balanced.</p>
+    </div>
+  
+    <div class="hobbies-grid">
+      <!-- SOCCER -->
+      <div class="panel hobby-card image">
+        <div class="hobby-image">
+          <img src="assets/hobby-soccer.jpg" alt="Playing soccer" />
+        </div>
+        <div class="hobby-content">
+          <div class="hobby-title">SOCCER</div>
+          <p class="card-text">
+            Team sport that builds discipline, communication, and endurance.
+          </p>
+        </div>
+      </div>
+  
+      <!-- HIKING -->
+      <div class="panel hobby-card image">
+        <div class="hobby-image">
+          <img src="assets/hobby-hiking.jpg" alt="Hiking" />
+        </div>
+        <div class="hobby-content">
+          <div class="hobby-title">HIKING</div>
+          <p class="card-text">
+            Exploring trails and nature to reset focus and maintain mental clarity.
+          </p>
+        </div>
+      </div>
+  
+      <!-- CHESS -->
+      <div class="panel hobby-card image">
+        <div class="hobby-image">
+          <img src="assets/hobby-chess.jpg" alt="Chess" />
+        </div>
+        <div class="hobby-content">
+          <div class="hobby-title">CHESS</div>
+          <p class="card-text">
+            Strategy-driven thinking, pattern recognition, and long-term planning.
+          </p>
+        </div>
+      </div>
+  
+      <!-- GYM -->
+      <div class="panel hobby-card image">
+        <div class="hobby-image">
+          <img src="assets/hobby-gym.jpg" alt="Gym training" />
+        </div>
+        <div class="hobby-content">
+          <div class="hobby-title">GYM</div>
+          <p class="card-text">
+            Strength training and consistency to stay sharp physically and mentally.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- CONTACT -->
+    <section class="block" id="contact">
+      <div class="contact panel">
+        <div class="contact-left">
+          <h2 class="section-title">GET IN TOUCH</h2>
+          <p class="card-text">Send a message or copy my email.</p>
+
+          <div class="contact-meta">
+            <div class="info">
+              <div class="label">EMAIL</div>
+              <div class="value" id="emailText">jenil.kathrotia@sjsu.edu</div>
+            </div>
+            <div class="info">
+              <div class="label">GITHUB</div>
+              <div class="value"><a class="meta" href="https://github.com/jenilkathrotia" target="_blank" rel="noreferrer">github.com/jenilkathrotia</a></div>
+            </div>
+            <div class="info">
+              <div class="label">LINKEDIN</div>
+              <div class="value"><a class="meta" href="https://www.linkedin.com/in/jenil-kathrotiya-655935257" target="_blank" rel="noreferrer">linkedin.com/in/jenil-kathrotiya</a></div>
+            </div>
+          </div>
+
+          <button class="pill" id="copyEmailBtn" type="button">COPY EMAIL</button>
+          <p class="hint" id="copyHint"></p>
+        </div>
+
+        <form class="contact-right" id="contactForm">
+          <label class="field">
+            <span>NAME</span>
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+
+          <label class="field">
+            <span>EMAIL</span>
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+
+          <label class="field">
+            <span>MESSAGE</span>
+            <textarea name="message" rows="6" placeholder="Hi Jenil! I'd like to..." required></textarea>
+          </label>
+
+          <button class="pill dark" type="submit">SEND</button>
+          <p class="hint" id="formHint"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Jenil Kathrotia</div>
+      <a class="meta" href="#top">BACK TO TOP ↑</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
