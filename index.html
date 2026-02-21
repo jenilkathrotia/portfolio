@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Top Bar -->
   <header class="topbar" id="top">
     <nav class="nav wrap">
       <a class="brand" href="#top">JENIL<span class="dot">®</span></a>
@@ -36,7 +35,6 @@
   </header>
 
   <main class="wrap">
-    <!-- HERO -->
     <section class="cover reveal" aria-label="Intro">
       <div class="cover-left panel">
         <div class="kicker">
@@ -93,7 +91,6 @@
       </div>
     </section>
 
-    <!-- CONTENT LIST -->
     <section class="contents panel reveal" aria-label="Contents">
       <div class="contents-head">
         <h2 class="section-title">CONTENTS LIST</h2>
@@ -111,14 +108,12 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section class="block reveal" id="projects">
       <div class="block-head">
         <h2 class="section-title">PROJECTS</h2>
         <p class="sub">ML + data engineering projects with deployment-focused thinking.</p>
       </div>
 
-      <!-- Project search (advanced feature) -->
       <div class="panel tools-row">
         <div class="tool-left">
           <div class="label">SEARCH PROJECTS</div>
@@ -161,6 +156,40 @@
 
         <article class="card panel">
           <div class="card-top">
+            <h3 class="card-title">HACKAGENT (SECURITY COPILOT)</h3>
+            <div class="chip-row">
+              <span class="chip">NEXT.JS</span><span class="chip">AWS BEDROCK</span><span class="chip">NEO4J</span><span class="chip">AI SDK</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Built an AI-driven DevOps dashboard to automate cloud infrastructure security and reduce alert fatigue.</li>
+            <li>Integrated Neo4j to query and visually map the attack path and blast radius of compromised resources.</li>
+            <li>Leveraged AWS Bedrock (Claude 3.5 Sonnet) to dynamically generate human-approved CLI remediation commands.</li>
+          </ul>
+          <div class="card-actions">
+            <a class="pill" href="https://github.com/jenilkathrotia/HackAgent" target="_blank" rel="noreferrer">CODE</a>
+          </div>
+        </article>
+
+        <article class="card panel">
+          <div class="card-top">
+            <h3 class="card-title">WINE QUALITY ANALYSIS</h3>
+            <div class="chip-row">
+              <span class="chip">R</span><span class="chip">STATISTICS</span><span class="chip">DATA VIZ</span><span class="chip">R MARKDOWN</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Conducted statistical analysis on ~6,500 wine samples to determine factors influencing quality.</li>
+            <li>Performed outlier detection, hypothesis testing (t-tests), and Pearson correlation using R.</li>
+            <li>Visualized key findings, proving mathematically that alcohol content is the strongest predictor of wine quality.</li>
+          </ul>
+          <div class="card-actions">
+            <a class="pill" href="https://github.com/jenilkathrotia/Wine-Quality-Analysis" target="_blank" rel="noreferrer">CODE</a>
+          </div>
+        </article>
+
+        <article class="card panel">
+          <div class="card-top">
             <h3 class="card-title">VOLUNTEER HOURS TRACKING</h3>
             <div class="chip-row">
               <span class="chip">EXCEL</span><span class="chip">AUTOMATION</span><span class="chip">DATA OPS</span>
@@ -173,7 +202,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="split block reveal" id="about">
       <div class="panel about-left">
         <h2 class="section-title">ABOUT ME</h2>
@@ -200,7 +228,6 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section class="block reveal" id="experience">
       <div class="block-head">
         <h2 class="section-title">EXPERIENCE</h2>
@@ -247,7 +274,6 @@
       </div>
     </section>
 
-    <!-- EDUCATION -->
     <section class="block reveal" id="education">
       <div class="block-head">
         <h2 class="section-title">EDUCATION</h2>
@@ -280,7 +306,6 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section class="block reveal" id="skills">
       <div class="block-head">
         <h2 class="section-title">TECHNICAL SKILLS</h2>
@@ -307,7 +332,6 @@
       </div>
     </section>
 
-    <!-- HOBBIES -->
     <section class="block reveal" id="hobbies">
       <div class="block-head">
         <h2 class="section-title">HOBBIES</h2>
@@ -357,7 +381,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section class="block reveal" id="contact">
       <div class="contact panel">
         <div class="contact-left">
@@ -411,7 +434,6 @@
     </footer>
   </main>
 
-  <!-- Back to top button -->
   <button id="toTop" class="to-top" type="button" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
