@@ -614,6 +614,10 @@ input:focus, textarea:focus{
   background: rgba(255,255,255,.06);
   color: var(--ink);
 }
+:root[data-theme="dark"] .card-text,
+:root[data-theme="dark"] .bullets{
+  color: rgba(242,243,239,.82);
+}
 :root[data-theme="dark"] .card-text{
   color: rgba(242,243,239,.72);
 }
