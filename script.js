@@ -45,14 +45,26 @@ form?.addEventListener("submit", (e) => {
   const email = String(data.get("email") || "").trim();
   const message = String(data.get("message") || "").trim();
 
-  const to = "jenil.kathrotia@sjsu.edu";
-  const subject = encodeURIComponent(`Portfolio message from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+  const to = "kathrotiyajenil3@gmail.com";
+  const subject = `Portfolio message from ${name}`;
+  const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
 
-  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+  const params = new URLSearchParams({
+    view: "cm",
+    fs: "1",
+    to,
+    su: subject,
+    body,
+  });
+  const gmailCompose = `https://mail.google.com/mail/?${params.toString()}`;
 
-  formHint.textContent = "Opening your email app…";
-  setTimeout(() => (formHint.textContent = ""), 2000);
+  const opened = window.open(gmailCompose, "_blank", "noopener,noreferrer");
+  if (!opened) {
+    window.location.href = gmailCompose;
+  }
+
+  formHint.textContent = "Opening Gmail compose…";
+  setTimeout(() => (formHint.textContent = ""), 2800);
 });
 
 // ---------- Dark mode (saved) ----------
