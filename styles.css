@@ -427,10 +427,6 @@ a{ color: inherit; text-decoration: none; }
   line-height: 1.65;
 }
 .bullets li{ margin: 8px 0; }
-.project-brief{ margin-top: 0; }
-.project-brief li{ margin: 6px 0; }
-.project-stack{ margin-top: 12px; font-size: 13px; }
-.project-brief a{ text-decoration: underline; text-underline-offset: 3px; }
 /* Skills & hobbies grids */
 .skills-grid{
   display: grid;
